@@ -12,7 +12,6 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/auth',AuthRoute)
-app.use('/',authMiddleware,proRoute)
 
 
 app.post('/',async(req,res)=>{
