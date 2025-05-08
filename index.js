@@ -3,8 +3,6 @@ import express from 'express'
 import connectdb from './db.js';
 import cors from 'cors'
 import AuthRoute from './routes/auth.js';
-import proRoute from './routes/protected.js';
-import authMiddleware from './middlewares/authmiddle.js';
 const app = express();
 const PORT = process.env.PORT || 9000;
 
